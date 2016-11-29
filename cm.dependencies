@@ -1,8 +1,8 @@
 [
   {
     "remote": "github",
-    "repository": "mohancm100/android_vendor_lenovo_A7010a48",
+    "repository": "mohancm/vendor_files",
     "target_path": "vendor/lenovo/A7010a48",
-    "branch": "master"
+    "branch": "ril_testing"
   }
 ] 

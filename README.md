@@ -1,41 +1,77 @@
-Lenovo K4 Note
+Elephone P9000 - CyanogenMod 14.0/AOSP7.0
 ==============
 
-The Lenovo K4 Note (codenamed _"A7010a48"_) is a flagship killer smartphone from Lenovo.
+This branch is device for building of the CyanogenMod 14.0 and Android Nougat 7.0 AOSP ROMs. For more information about building the ROM, read our [build manual](manual).
 
-This CyanogenMod 13.0 Device tree for K4 Note
+---
 
-For more information about building read "manual"
+# About Device
 
-Basic        | Spec Sheet
--------:     |:-------------------------
-CPU          | 1.3GHz Octa-Core MT6753 
-GPU          | Mali-T720MP3
-Memory       | 3GB RAM
-Shipped Android Version | 6.0(5.1 to 6.0)
-Storage      | 16GB
-Battery      | 3300 mAh
-Display      | 5.5" 1920 x 1080 px DPI 480
-Rear Camera  | 13MP , Dual LED Flash!
-Front Camera | 5MP 
+![Elephone P9000](http://g03.a.alicdn.com/kf/HTB1.TsuKVXXXXanXXXXq6xXFXXX6/Official-Direct-Elephone-P9000-Helio-P10-MTK6755-2-0GHz-Octa-Core-4GB-RAM-32GB-ROM-5.jpg "Elephone P9000 in black")
 
+Announced on 25th December 2015, the Elephone P9000 (codenamed _"P9000"_) is a flagship smartphone from Elephone. The P9000 now supports CyanogenMod 14.0!
 
-This branch is device for building of CyanogenMod 13.0 (or Android Marshmallow 6.0 AOSP based roms) ROM.
+### Specifications
 
-## Working:
-It is boots and hardware accelerated and everything is working.
- 
-## Not Working:
-You tell me!
+Component Type | Details
+-------:|:-------------------------
+CPU     | 2.0GHz Octa-Core MT6755 (Helio P10)
+GPU     | Mali-T860
+Memory  | 4GB RAM
+Shipped Android Version | 6.0
+Storage | 32GB
+Battery | 3000 mAh
+Display | 5.5" 1920 x 1080 px DPI 480
+Rear Camera | 13MP (Sony IMX258 Exmor RS), Dual LED Flash, Laser autofocus
+Front Camera | 8MP (OV)
 
-## Thanks to:
-CyanogenMod team and many other Developers
-# device_lenovo_A7010a48
+---
 
-## Credits
-<@deeplex> [for sources]
-<@JonnyXDA>
-<@visi0nary>
-<@Mohancm100>
-<@Kishanpatel>
-<@Venkatpinnamani>
+# Build Information
+
+### In progress(only for cm-14.0):
+ * Hardware acceleration
+ * Wi-Fi
+ * Offline charging
+ * GPS
+ * AGPS
+ * Vibration
+ * Audio
+ * Auto brightness
+ * Doze
+ * RAM and ROM
+ * Rotation
+ * All sensors
+ * NFC (payments, pairing .etc)
+ * Lazer autofocus
+ * Flashlight (statusbar and camera)
+ * Bluetooth
+ * Camera rear/front (video and photo)
+ * Micro SD support
+ * MTP and Mass Storage modes
+ * Audio over Bluetooth (music, calls .etc)
+ * Fingerprint scanner
+ * Wi-Fi tethering
+ * HOME Button like in stock
+ * Special button new functional
+
+### In progress:
+ * Force close camera with HDR on
+ * RIL improvment for some users
+ * Enforcing SELinux
+ * FMRadio with enforcing SELinux
+ * PE and PE+ (fast charging)
+
+### Thanks to:
+ * CyanogenMod team
+ * Deepflex
+ * Wuxianlin
+ * Ferhung
+ * SHVED
+ * Xen0n
+ * JonnyXDA
+ * olegsvs
+ * Visi0nary
+ * andyrichardson
+ * Team M.A.D
+

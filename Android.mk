@@ -20,7 +20,4 @@ ifeq ($(TARGET_DEVICE),A7010a48)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
-# Prebuilt kernel
-$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
-
 endif

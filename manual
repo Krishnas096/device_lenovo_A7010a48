@@ -1,27 +1,30 @@
-#How to Build the CM13 From Source:
+How to make a patches after changes in CM source code:
 
-##
- *Download vendor tree and device tree from my git".
+Cd Working_dir (For example: Cd cm13/frameworks/base)
+git status
+git add .
+git commit -m "name of patch"
+git show HEAD > 0001_.patch
 
- *Create directories lenovo/A7010a48 and place them in working_dir/device and in working_dir/vendor
+How to launch the CM13 build:
+Download vendor and device from my git.
+Create dirs elephone/p9000 and place them in working_dir/device and in working_dir/vendor
+After copy files from downloaded device in working_dir/device , and from downloaded vendor in working_dir/vendor
+Open terminal and write:
+cd Working_dir
+After apply patches:
+sh device/elephone/p9000/patches/install.sh
+Write:
 
- *After copy files from downloaded device in working_dir/device , and from downloaded vendor in working_dir/vendor
-  
- *Open terminal and write:
-     *cd Working_dir
+export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx8g"
 
-	 After apply patches:
+./prebuilts/sdk/tools/jack-admin kill-server
 
-	 sh device/lenovo/A7010a48/patches/install.sh
+./prebuilts/sdk/tools/jack-admin start-server
 
-	 
-#Write Below commands in Terminal(alt+ctr+T)
+export USE_NINJA=false && unset BUILDING_WITH_NINJA
 
-   * .build/envsetup.sh && Select lunch Combo
-   lunch A7010a48
+. build/envsetup.sh
 
-   And
-
-   mka bacon
-
-   compiling get started ! Take some Rest! your build is ready on output directory.
+brunch p9000
+Wait of finish, for me ~4hr
